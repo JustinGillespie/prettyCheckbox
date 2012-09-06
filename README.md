@@ -16,7 +16,25 @@ $("input[type=checkbox]").prettyCheckbox();
 
 See a basic usage example here: http://demo.justingillespie.com/prettyCheckbox/
 
+## Usage
+---
+
+###References
+
+First include jQuery on your page
+
+```javascript
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.js"></script>
+```
+
+Include prettyCheckbox.js
+
+```javascript
+<script src="prettyCheckbox.js" charset="utf-8"></script>
+```
+
 ## Styling
+---
 
 prettyCheckbox.js will give you CSS classes to work with to easily customize a checkboxes.
 

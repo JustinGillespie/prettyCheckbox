@@ -16,25 +16,35 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================= */
- 
+
 (function( $ ){
 
-    // jQuery plugin wrapper
+    $.fn.prettyCheckbox = function( options ) {  
 
-    $.fn.prettyCheckbox = function() {
+        // plugin default settings
 
-        this.each(function() {
-            
+        var settings = $.extend( { 'class' : 'prettyCheckbox' }, options);
+
+        return this.each(function() {        
+
             // cache the current object iteration
 
             var current = $(this), check;
 
             current.hide()
-                   .after('<div class="prettyCheckbox"></div>')
+                   .after('<div class=\"' + settings.class + '\"></div>')
                    .next()
                    .bind('click', function() { 
+                        
+                        // cache checkbox and disable text highlighting
+
                         check = $(this); // cache
                         check.mousedown( function(e) { e.preventDefault(); });
+                        
+                        // Evalute the checkbox. If the checkbox is unchecked, the attribute is changed to 
+                        // checked while the replacement checkbox div has a check element appended. On uncheck 
+                        // the check element is removed.
+                        
                         check.hasClass('checked') ? check.removeClass('checked') : check.addClass('checked');
                         check.hasClass('checked') ? check.append("<div class=\"check\"></div>") : $('.check', check).remove();
                         current.attr('checked') === 'checked' ? current.removeAttr('checked') : current.attr('checked', 'checked');
@@ -46,6 +56,8 @@
             // If the element is checked at page load, set prettyCheckbox to checked!
 
             if( current.attr('checked') === 'checked' ) { current.next().addClass('checked').append('<div class=\"check\"></div>'); }
+
         });
     };
+
 })( jQuery );
