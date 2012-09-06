@@ -16,7 +16,7 @@
 .prettyCheckbox.checked { position: relative; }
 
 .prettyCheckbox.checked .check {
-  background: url('img/checkmark-dark.png') no-repeat;
+  background: url('img/checkmark.png') no-repeat;
   display: inline-block;
   height: 16px;
   width: 16px;
