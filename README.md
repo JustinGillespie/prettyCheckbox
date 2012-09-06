@@ -16,15 +16,12 @@ prettyCheckbox.js will give you a few CSS classes to work with to easily customi
 
 ```css
 /* The default look of a checkbox */
-
 .prettyCheckbox { }
 
 /* The look of the checkbox when it's checked */
-
 .prettyCheckbox.checked { }
 
 /* The checkbox image or text */
-
 .prettyCheckbox.checked .check { }
 ```
 
