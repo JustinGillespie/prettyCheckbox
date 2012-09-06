@@ -21,14 +21,17 @@ See a basic usage example here: http://demo.justingillespie.com/prettyCheckbox/
 prettyCheckbox.js will give you CSS classes to work with to easily customize a checkbox element.
 
 ```css
-/* The default look of a checkbox */
-.prettyCheckbox { }
+.prettyCheckbox {
+	/* The default look of a checkbox */
+}
 
-/* The look of the checkbox when it's checked */
-.prettyCheckbox.checked { }
+.prettyCheckbox.checked {
+	/* The look of the checkbox when it's checked */
+}
 
-/* The checkbox image or text */
-.prettyCheckbox.checked .check { }
+.prettyCheckbox.checked .check {
+	/* The checkbox image icon or text */
+}
 ```
 
 ## License
