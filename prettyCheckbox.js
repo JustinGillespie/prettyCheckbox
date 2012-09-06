@@ -1,6 +1,6 @@
 /* =========================================================
  * prettycheckbox.js v1.0.0
- * http://justingillespie.github.com/prettyCheckbox/
+ * https://github.com/JustinGillespie/prettyCheckbox/
  * =========================================================
  * Copyright 2012 Justin Gillespie
  *
