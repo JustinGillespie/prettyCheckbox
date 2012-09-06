@@ -1,0 +1,60 @@
+/* Example Page Styles */
+
+html, body, div, span, p, a, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  font-family: sans-serif;
+  vertical-align: baseline;
+}
+
+body { 
+  color: #333;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 30px;
+}
+
+p { position: relative; margin-bottom: 5px; }
+
+label { 
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  left: 30px;
+}
+
+/* Pretty Checkboxes */
+
+.prettyCheckbox {
+  background: #efefef;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+       -o-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.prettyCheckbox.checked { position: relative; }
+
+.prettyCheckbox.checked .check {
+  background: url('img/checkmark.png') no-repeat;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 100;
+}
