@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 ```
 
-To apply it to all checkboxes as a global style:
+or to apply it to all checkboxes as a global style:
 
 ```javascript
 $("input[type=checkbox]").prettyCheckbox();
@@ -18,7 +18,7 @@ See a basic usage example here: http://demo.justingillespie.com/prettyCheckbox/
 
 ## Styling
 
-prettyCheckbox.js will give you a few CSS classes to work with to easily customize a checkbox element.
+prettyCheckbox.js will give you CSS classes to work with to easily customize a checkbox element.
 
 ```css
 /* The default look of a checkbox */
