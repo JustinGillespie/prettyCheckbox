@@ -8,6 +8,12 @@ $(document).ready(function() {
 });
 ```
 
+To apply it to all checkboxes as a global style:
+
+```javascript
+$("input[type=checkbox]").prettyCheckbox();
+```
+
 See a basic usage example here: http://demo.justingillespie.com/prettyCheckbox/
 
 ## Styling
