@@ -36,4 +36,4 @@ prettyCheckbox.js will give you CSS classes to work with to easily customize a c
 
 ## License
 
-Copyright (c) 2011-2012 Justin Gillespie licensed under the [Apache License](http://www.apache.org/licenses/LICENSE-2.0).
+Copyright (c) 2011-2012 Justin Gillespie licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
