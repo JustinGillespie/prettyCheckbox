@@ -3,9 +3,11 @@
 prettyCheckbox.js is a small jQuery plugin for checkbox replacement through CSS.
 
 <pre>
-	<code>
-		$(".myCheckbox").prettyCheckbox();
-	</code>
+<code>
+$(document).ready(function() {
+	$(".myCheckbox").prettyCheckbox();
+});
+</code>
 </pre>
 
 See a basic usage example here: http://demo.justingillespie.com/prettyCheckbox/
@@ -15,21 +17,19 @@ See a basic usage example here: http://demo.justingillespie.com/prettyCheckbox/
 prettyCheckbox.js will give you a few CSS classes to work with to easily customize a checkbox element.
 
 <pre>
-	<code>
+<code>
+/* The default look of a checkbox */
 
-		/* The default look of a checkbox */
+.prettyCheckbox { }
 
-		.prettyCheckbox { }
+/* The look of the checkbox when it's checked */
 
-		/* The look of the checkbox when it's checked */
+.prettyCheckbox.checked { }
 
-		.prettyCheckbox.checked { }
+/* The checkbox image or text */
 
-		/* The checkbox image or text */
-
-		.prettyCheckbox.checked .check { }
-
-	</code>
+.prettyCheckbox.checked .check { }
+</code>
 </pre>
 
 ## License
