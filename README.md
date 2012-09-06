@@ -17,7 +17,6 @@ $("input[type=checkbox]").prettyCheckbox();
 See a basic usage example here: http://demo.justingillespie.com/prettyCheckbox/
 
 ## Usage
----
 
 ###References
 
@@ -34,7 +33,6 @@ Include prettyCheckbox.js
 ```
 
 ## Styling
----
 
 prettyCheckbox.js will give you CSS classes to work with to easily customize a checkboxes.
 
@@ -50,6 +48,27 @@ prettyCheckbox.js will give you CSS classes to work with to easily customize a c
 .prettyCheckbox.checked .check {
 	/* The checkbox image icon or text */
 }
+```
+
+## Options
+
+Options are typically passed to the init as a parameter.
+
+```javascript
+$("input[type=checkbox]").prettyCheckbox({ 'class' : 'myCustomClass' });
+```
+
+### class
+
+Change the class of the provided replacement checkbox element.  This is also useful for styling checkboxes on the same page differently.
+
+```javascript
+$(".myCheckBox").prettyCheckbox({ 'class' : 'myCustomClass' });
+```
+```css
+.myCustomClass { /* The default look of a checkbox */ }
+.myCustomClass.checked { /* The look of the checkbox when it's checked */ }
+.myCustomClass.checked .check { /* The checkbox image icon or text */ }
 ```
 
 ## License
