@@ -34,7 +34,7 @@
 		  cursor: pointer;
 		  position: absolute;
 		  top: 4px;
-		  left: 30px;
+		  left: 33px;
 		}
 
 		/* Pretty Checkboxes */
@@ -57,7 +57,7 @@
 		.prettyCheckbox.checked { position: relative; }
 
 		.prettyCheckbox.checked .check {
-		  background: url('img/checkmark.png') no-repeat;
+		  background: url('img/checkmark-dark.png') no-repeat;
 		  display: inline-block;
 		  height: 16px;
 		  width: 16px;
@@ -67,6 +67,27 @@
 		  z-index: 100;
 		}
 
+		/* An example of a custom class prettyCheckbox */
+
+		.darkCheckbox {
+		  background: #999;
+		  border: 3px solid #555;
+		  cursor: pointer;
+		  display: inline-block;
+		  height: 18px;
+		  width: 18px;
+
+		  -webkit-border-radius: 18px;
+		     -moz-border-radius: 18px;
+		      -ms-border-radius: 18px;
+		       -o-border-radius: 18px;
+		          border-radius: 18px;
+		}
+
+		.darkCheckbox .checked { font-size: 16px; text-align: center; }
+		.darkCheckbox.checked .check { display: block; text-align: center; }
+		.darkCheckbox.checked .check:after { color: white; font-weight: bold; content: 'x'; }
+
 	</style>
 </head>
 <body>
@@ -74,12 +95,12 @@
 <h1>Example Checkboxes:</h1>
 
 <p>
-	<input type="checkbox">
+	<input type="checkbox" id="example1" checked="checked">
 	<label>Hey, I'm a Checkbox!</label>
 </p>
 
 <p>
-	<input type="checkbox">
+	<input type="checkbox" id="example2">
 	<label>Look, another one!</label>
 </p>
 
@@ -88,7 +109,10 @@
 
 <script>
 $(document).ready(function() {
-	$("input[type=checkbox]").prettyCheckbox();
+
+	$("#example1").prettyCheckbox();
+	$("#example2").prettyCheckbox({ 'class' : 'darkCheckbox' }); // overwrite the class
+
 });
 </script>
 
